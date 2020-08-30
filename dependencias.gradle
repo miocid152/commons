@@ -1,0 +1,16 @@
+ext {
+    compileSdkVersion = 30
+    buildToolsVersion = "30.0.2"
+    minSdkVersion = 21
+
+    versionCode = 1
+    versionName = "0.0.0001-ALFA"
+
+    //dependencias
+    appcompatX = '1.2.0'
+    constraintlayoutX = '1.1.3'
+    realm = '6.0.2'
+
+    authToken='jp_rtbb54hdk3uv0i5dnm50ve1e5t'
+
+}

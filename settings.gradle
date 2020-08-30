@@ -1,0 +1,3 @@
+include ':libCommons'
+include ':app'
+rootProject.name = "commons"
