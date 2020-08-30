@@ -10,12 +10,12 @@ android {
         targetSdkVersion rootProject.ext.compileSdkVersion
         versionCode rootProject.ext.versionCode
         versionName rootProject.ext.versionName
-
-        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-        consumerProguardFiles "consumer-rules.pro"
     }
 
     buildTypes {
+        debug {
+            minifyEnabled false
+        }
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
@@ -28,6 +28,7 @@ dependencies {
     implementation "androidx.appcompat:appcompat:$appcompatX"
 
 
-    implementation 'com.github.miocid152:SecurityLib:f2c10527'
+    debugImplementation("com.github.miocid152:SecurityLib:$securityLib")
+    releaseImplementation("com.github.miocid152:SecurityLib:$securityLib")
 
 }

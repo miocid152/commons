@@ -13,4 +13,7 @@ ext {
 
     authToken='jp_rtbb54hdk3uv0i5dnm50ve1e5t'
 
+    //dependencias propias
+    securityLib='f2c10527'
+
 }
